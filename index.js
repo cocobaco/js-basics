@@ -25,16 +25,47 @@ console.log(person);
 // array
 selectedColor = ['red', 'green' , 'blue', 'pink'];
 console.log(selectedColor);
+selectedColor.push('yellow');  // add item at the end
+console.log(selectedColor);
+selectedColor[0] = 'orange';  // change item
+console.log(selectedColor);
+selectedColor.splice(1, 1);  // delete item
+console.log(selectedColor);
 
 // function
 function greet(firstName, lastName) {
-    console.log('Hola ' + firstName + ' ' + lastName);
+    greeting = 'Hola ' + firstName + ' ' + lastName;
+    return greeting;
+    // console.log('Hola ' + firstName + ' ' + lastName);
 }
 
-greet('Ron', 'Swanson')
+// greet('Ron', 'Swanson')
+
+document.write(greet('Ron', 'Swanson') + '<br>');
 
 function square(num) {
     return num * num
 }
 
-console.log(square(4));
+document.write(square(4), '<br>');
+
+// calling x after definition 
+var x = 5; 
+document.write(x, "<br>"); 
+
+// calling y after definition  
+let y = 10; 
+document.write(y, "<br>"); 
+
+// calling var z before definition will return undefined 
+document.write(z, "<br>"); 
+var z = 2; 
+
+// calling let a before definition will give error 
+// document.write(a); 
+// let a = 3; 
+
+var img_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png";
+var img = document.createElement('img');
+img.src = img_url;
+document.body.appendChild(img);
