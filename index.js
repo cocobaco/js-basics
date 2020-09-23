@@ -40,25 +40,28 @@ function greet(firstName, lastName) {
 }
 
 // greet('Ron', 'Swanson')
+document.write("Functions demo:" + "<br>");
 
-document.write(greet('Ron', 'Swanson') + '<br>');
+document.write("greet: ", greet('Ron', 'Swanson') + '<br>');
 
 function square(num) {
     return num * num
 }
 
-document.write(square(4), '<br>');
+document.write("square(4) = ", square(4), '<br>');
+
+document.write("variables demo:" + "<br>");
 
 // calling x after definition 
 var x = 5; 
-document.write(x, "<br>"); 
+document.write("x = ", x, "<br>"); 
 
 // calling y after definition  
 let y = 10; 
-document.write(y, "<br>"); 
+document.write("y = ", y, "<br>"); 
 
 // calling var z before definition will return undefined 
-document.write(z, "<br>"); 
+document.write("z = ", z, "<br>"); 
 var z = 2; 
 
 // calling let a before definition will give error 
@@ -68,4 +71,5 @@ var z = 2;
 var img_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png";
 var img = document.createElement('img');
 img.src = img_url;
+img.classList.add('key-image');
 document.body.appendChild(img);
