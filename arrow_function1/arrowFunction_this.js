@@ -20,9 +20,9 @@ class Actor {
     }
 }
 
-let leah = new Actor('Leah', 'F', 157);
+let lala = new Actor('Lala', 'F', 157);
 
-leah.printInfoFunction();
+lala.printInfoFunction();
 
-leah.printInfoArrow();
+lala.printInfoArrow();
 
